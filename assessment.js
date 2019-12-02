@@ -83,8 +83,25 @@ var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear"];
 
 // CODE HERE...
 
+function Vehicle() {
+    var gadget = {}
+    gadget.gasRemaining = 100
+    gadget.drive = drive
 
+    return gadget;
 
+}
+
+var drive = function() {
+    this.gasRemaining -=25
+}
+
+var charger = Vehicle()
+charger.drive()
+
+var mustang = Vehicle()
+charger.drive()
+charger.drive()
 
 
 // -----------------------------------------------------------------------------
@@ -108,7 +125,9 @@ var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear"];
 
 
 // CODE HERE...
-
+var grammarPolice = function(string) {
+    string = 
+}
 
 
 // *************
