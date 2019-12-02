@@ -125,8 +125,16 @@ charger.drive()
 
 
 // CODE HERE...
-var grammarPolice = function(string) {
-    string = 
+var grammarPolice = function(str) {
+    str = str.toLocaleLowerCase();
+    var array = str.split('');
+    for (var i = 0; i < array.length; i++) {
+        if(array[i] === ' ') {
+            array[i+1].splice(1,'g')
+        }
+        console.log(array)
+        // array[i][0].splice(1,1,)
+    }
 }
 
 
@@ -145,6 +153,12 @@ var grammarPolice = function(string) {
 // In all other cases, return "Different values"
 
 // CODE HERE...
+function valueType(arg1,arg2){
+var test = false;
+if(typeof arg1 === typeof arg2){
+
+}
+}
 
 // *************
 // * PROBLEM 5 *
